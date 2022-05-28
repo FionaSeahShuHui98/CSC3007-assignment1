@@ -28,13 +28,13 @@ fetch ("https://api.data.gov.sg/v1/environment/psi").then ((psi_data) => {
 
     // PSI Data Table
     for (var i = 0; i < length; i++) {
-        var national_col = Object.values(psi_object.items[0].readings)[i].national
-        var central_col =  Object.values(psi_object.items[0].readings)[i].central
-        var west_col =  Object.values(psi_object.items[0].readings)[i].west
-        var east_col =  Object.values(psi_object.items[0].readings)[i].east
-        var north_col =  Object.values(psi_object.items[0].readings)[i].north
-        var south_col =  Object.values(psi_object.items[0].readings)[i].south
-        $("#psi_data_table tr:last").after("<tr><td>" + metric[i] + "</td><td>" + national_col + "</td><td>" + central_col + "</td><td>" + west_col + "</td><td>" + east_col + "</td><td>" + north_col + "</td><td>" + south_col + "</td></tr>");
+        var national_column = Object.values(psi_object.items[0].readings)[i].national
+        var central_column =  Object.values(psi_object.items[0].readings)[i].central
+        var west_column =  Object.values(psi_object.items[0].readings)[i].west
+        var east_column =  Object.values(psi_object.items[0].readings)[i].east
+        var north_column =  Object.values(psi_object.items[0].readings)[i].north
+        var south_column =  Object.values(psi_object.items[0].readings)[i].south
+        $("#psi_data_table tr:last").after("<tr><td>" + metric[i] + "</td><td>" + national_column + "</td><td>" + central_column + "</td><td>" + west_column + "</td><td>" + east_column + "</td><td>" + north_column + "</td><td>" + south_column + "</td></tr>");
     } 
 
     // Time formating
